@@ -22,7 +22,8 @@ canonifyURLs = true
 
   # SEO 기본 (없으면 커스텀 파셜이 보완)
   keywords = ["바이낸스", "Binance", "가입 방법", "KYC", "암호화폐 거래소"]
-
+  # 홈에 표시할 메인 섹션을 비웁니다.
+  mainSections = []
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
