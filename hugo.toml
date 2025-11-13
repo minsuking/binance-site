@@ -4,7 +4,8 @@ languageCode = "ko-kr"
 theme = "PaperMod"
 enableRobotsTXT = true
 canonifyURLs = true
-paginate = 12
+[pagination]
+  pagerSize = 12
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "SITEMAP"]
