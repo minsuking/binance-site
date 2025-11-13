@@ -1,6 +1,6 @@
 img {
-    max-width: 500px;  /* 원하는 최대 가로 사이즈 */
-    width: 100%;       /* 모바일 대응 */
+    max-width: 480px;   /* 👉 최대 가로 폭 줄이기: 필요하면 420~520 선에서 조절 */
+    width: 100%;        /* 모바일에서는 화면 폭에 맞춰서 */
     height: auto;
     display: block;
     margin: 16px auto; /* 가운데 정렬 + 여백 */
