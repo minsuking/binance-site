@@ -1,0 +1,7 @@
+img {
+    max-width: 500px;  /* 원하는 최대 가로 사이즈 */
+    width: 100%;       /* 모바일 대응 */
+    height: auto;
+    display: block;
+    margin: 16px auto; /* 가운데 정렬 + 여백 */
+  }

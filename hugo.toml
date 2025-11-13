@@ -40,7 +40,8 @@ canonifyURLs = true
 
 [params.assets]
   disableHLJS = false
-
+  customCSS = ["css/custom.css"]
+  
 [params.advertiser]
   name  = "김민수"
   email = "pepsi4040@naver.com"
