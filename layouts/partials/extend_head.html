@@ -1,0 +1,41 @@
+{{/* ------------------------------
+  📄 JoinHelpers Custom HEAD
+  --------------------------------*/}}
+  
+  {{/* guide/join 페이지만 RankMath 메타 실행 (슬래시 포함) */}}
+{{/* RankMath/SEO 메타는 실제 컨텐츠 페이지(.IsPage)에서만 렌더 */}}
+{{ if .IsPage }}
+  {{ partial "seo-rankmath.html" . }}
+{{ end }}
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX', { 'anonymize_ip': true });
+</script>
+
+<!-- Referral Click Tracking -->
+<script>
+document.addEventListener('click', function(e) {
+  const a = e.target.closest('a');
+  if (!a) return;
+  const isReferral = a.href.includes('bingx.com/invite');
+  if (isReferral && typeof gtag === 'function') {
+    gtag('event', 'click', {
+      'event_category': 'referral',
+      'event_label': 'BingX',
+      'value': 1
+    });
+  }
+}, {passive:true});
+</script>
+
+<!-- Simple styles -->
+<style>
+.cta {display:inline-block;padding:.9rem 1.2rem;border-radius:12px;border:1px solid #ddd;text-decoration:none}
+.cta-primary {border-color:#0d6efd}
+.cta-wrap {display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.badge {font-size:.8rem;padding:.2rem .5rem;border:1px solid #eee;border-radius:8px}
+</style>
