@@ -27,7 +27,7 @@ keywords = [
 ]
 [seo]
   robots = "index,follow"
-  canonical = "https://binance.joinhelpers.com/guide/join/"
+  canonical = "https://binance.joinhelpers.com/guide/"
 +++
 
 <!-- 전환 + 딜레이 이동 공용 함수 -->
