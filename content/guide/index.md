@@ -1,7 +1,7 @@
 +++
 title = "바이낸스 가입 방법 및 KYC 인증 절차 안내"
 description = "본 글은 바이낸스 거래소의 가입 방법과 KYC 인증 절차, 초보자도 가능한 바이낸스 회원 가입 Binance 인증 및 바이낸스 수수료 정보 제공 가이드입니다."
-slug = "join"
+slug = "guide"
 type = "page"
 draft = false
 ShowToc = false
